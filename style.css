@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+}
+
+p, a, ul, li{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f0eee2;
+    background-color: #434750;
+    background-image: url(asset/arrowhead-up.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 9999px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+}
+
+.scrollTop.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+header .head{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .wrapper-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: #434750;
+}
+
+.wrapper-head img{
+    width: 7rem;
+    margin: auto;
+}
+
+.wrapper-head h1{
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #f0eee2;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    background-color: #b7aea5;
+}
+
+header nav ul{
+    display: flex;
+    text-align: center;
+}
+
+header nav ul li{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #434750;
+    display: inline-block;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header nav ul li:hover{
+    background-color: #f0eee2;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: #f0eee2;
+}
+
+main #content{
+    flex-basis: 80%;
+    margin-left: 4rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+main article h1.judul{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+main article img{
+    display: flex;
+    margin: auto;
+    width: 600px;
+    border-radius: 0.75rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+main article#pengertian h1{
+    padding-top: 4rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+main article#kesimpulan h1{
+    padding-top: 4rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+}
+
+main aside{
+    flex-basis: 33.333333%;
+    display: flex;
+    text-align: center;
+    margin: 1.25rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    height: 24rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+main aside .aside-wrapper{
+    margin: 1.25rem;
+    align-self: center;
+}
+
+main aside .aside-wrapper h2{
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+main aside .aside-wrapper img{
+    border-radius: 9999px;
+    width: 8rem;
+    margin: auto;
+    margin-bottom: 0.75rem;
+}
+
+main aside .aside-wrapper h3{
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+main aside .aside-wrapper .linking{
+    margin-top: 0.75rem;
+}
+
+main aside .aside-wrapper .linking a{
+    text-decoration: none;
+    color: #434750;
+}
+main aside .aside-wrapper .linking a:hover{
+    color: #b7aea5;
+}
+
+main aside .aside-wrapper .linking a.link1{
+    margin-right: 1.25rem;
+}
+main aside .aside-wrapper .linking a.link2{
+    margin-right: 1.25rem;
+}
+
+footer{
+    background-color: #434750;
+}
+footer p{
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #f0eee2;
+}
+
+footer p a{
+    color: #b7aea5;
+}
+
+
+@media (max-width: 768px) {
+    h1.judul{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    p{
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    main #content{
+        flex-basis: 100%;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem; 
+        background-color: white;
+        border-radius: 0.75rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+    main article img{
+        width: 200px;
+    }
+}
